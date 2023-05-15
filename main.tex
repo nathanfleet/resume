@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Nathan Fleet
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{https://www.nathan-fleet.com/}{\Large Nathan Fleet}} & Email : \href{mailto:nfleet@kent.edu}{nfleet@kent.edu}\\
+%   \href{https://www.nathan-fleet.com/}{https://www.nathan-fleet.com/} & Mobile : +1-330-541-6881 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Nathan Fleet} \\ \vspace{1pt}
+    \small 330-541-6881 $|$ \href{mailto:x@x.com}{\underline{nfleet@kent.edu}} $|$ 
+    \href{https://www.linkedin.com/in/nathan-fleet-555897217/}{\underline{linkedin.com/in/nathan}} $|$
+    \href{https://github.com/nathanfleet}{\underline{github.com/nathan}} $|$
+    \href{https://www.nathan-fleet.com/}{\underline{nathan-fleet.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kent state University}{Kent, OH}
+      {Bachelor of Science in Computer Science}{Aug. 2021 -- Present}
+  \resumeSubHeadingListEnd
+
+
+%-----------RELEVANT COURSEWORK-----------
+\section{Relevant Coursework}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Computer Science I A\&B Proc/Object Program}{CS13011/CS13012}
+      {Familiarize students with programming in a high-level object-oriented language}{}
+      \resumeItemListStart
+        \resumeItem{Conditional and loop statements, functions, arrays, pointers}
+        \resumeItem{Object classes, dynamic memory allocation, vectors}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Computer Science II: Data Structures/Abstraction}{CS23001}
+      {Advanced computer programming design and development}{}
+      \resumeItemListStart
+        \resumeItem{Primary focus on data structures and abstraction}
+        \resumeItem{Utilized an object-oriented programming language}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineering}{CS33901}
+      {An introduction to software engineering concepts}{}
+      \resumeItemListStart
+        \resumeItem{life cycle models; modeling languages; requirements analysis; specification;}
+        \resumeItem{design; testing; validation; project management and maintenance.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Centralized Crypto} $|$ \emph{Next, React, Tailwind, Hot Toast}}{January 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Centralized Crypto is an application that allows users to deposit money into crypto currency accounts.}
+            \resumeItem{Users are able to make deposits/withdraws from external bank accounts using the web application.}
+            \resumeItem{Users are able to sign up with the “bank” to begin making transactions.}
+            \resumeItem{Application utilizes json for the back-end}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sneaker Sphere} $|$ \emph{SQL, React, Tailwind}}{January 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{The purpose of the Sneaker Sphere website is to create a marketplace for shoe buyers and sellers.}
+            \resumeItem{By implementing an SQL database, the website is able to manage all necessary information in one place}
+            \resumeItem{Application is an efficient and effective platform for shoe buying and selling.}
+            \resumeItem{SQL database REST API, React front end}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Gamma Physics} $|$ \emph{JavaScript, HTML, CSS}}{January 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{This project implements the p5.js library, as well as HTML and CSS}
+            \resumeItem{This game includes different levels, as well as different balls to choose from.}
+            \resumeItem{The balls come in different shapes and follow different physics rules.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, SQL, JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Next.js} \\
+     \textbf{Developer Tools}{: Git, VS Code, Visual Studio, Eclipse} \\
+     \textbf{Libraries}{: p5.js }
+    }}
+ \end{itemize}
+
+ %-----------SUMMARY-----------
+\section{Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     I'm a computer science student at Kent State University, currently enrolled in the honors college program. My academic interests lie in programming languages such as Python, JavaScript, and C++, and I enjoy using them to solve real-world problems. I'm passionate about software development and continuously strive to enhance my skills through hands-on experience and challenging coursework. I'm committed to developing innovative solutions that contribute to the betterment of society, and I'm excited about the opportunities that lie ahead as I continue to pursue my academic and professional goals.
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
