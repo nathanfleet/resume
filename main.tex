@@ -62,25 +62,24 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
+\newcommand{\resumeItem}[2]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -90,14 +89,26 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\projectItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\projectSubHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label=\textbullet]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,label=\textcolor{black}{$\circ$}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,104 +117,98 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{https://www.nathan-fleet.com/}{\Large Nathan Fleet}} & Email : \href{mailto:nfleet@kent.edu}{nfleet@kent.edu}\\
-%   \href{https://www.nathan-fleet.com/}{https://www.nathan-fleet.com/} & Mobile : +1-330-541-6881 \\
-% \end{tabular*}
-
-\begin{center}
-    \textbf{\Huge \scshape Nathan Fleet} \\ \vspace{1pt}
-    \small 330-541-6881 $|$ \href{mailto:x@x.com}{\underline{nfleet@kent.edu}} $|$ 
-    \href{https://www.linkedin.com/in/nathan-fleet-555897217/}{\underline{linkedin.com/in/nathan}} $|$
-    \href{https://github.com/nathanfleet}{\underline{github.com/nathan}} $|$
-    \href{https://www.nathan-fleet.com/}{\underline{nathan-fleet.com}}
-\end{center}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://nathan-fleet.com/}{\Large Nathan Fleet}} & Email : \href{mailto:nfleet@kent.edu}{nfleet@kent.edu}\\
+  \href{https://nathan-fleet.com/}{https://www.nathan-fleet.com} & Mobile : \href{tel:+13305416881}{+1-330-541-6881} \\
+\end{tabular*}
 
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Kent state University}{Kent, OH}
-      {Bachelor of Science in Computer Science}{Aug. 2021 -- Present}
+      {Kent State University, Honors College}{Kent, OH}
+      {Bachelor of Science in Computer Science; GPA: 3.595}{Aug. 2021 -- May 2025}
   \resumeSubHeadingListEnd
 
 
-%-----------RELEVANT COURSEWORK-----------
-\section{Relevant Coursework}
+%-----------EXPERIENCE-----------------
+\section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Computer Science I A\&B Proc/Object Program}{CS13011/CS13012}
-      {Familiarize students with programming in a high-level object-oriented language}{}
+      {Kent State University}{Kent, OH}
+      {Student Employee - Parking Services}{August 2022 - Ongoing}
       \resumeItemListStart
-        \resumeItem{Conditional and loop statements, functions, arrays, pointers}
-        \resumeItem{Object classes, dynamic memory allocation, vectors}
+        \resumeItem{Technology Utilization}
+          {Utilized a specialized software system to track parking violations and troubleshoot technical issues.}
+        \resumeItem{Problem Solving}
+          {Resolved disputes related to parking violations, often involving complex and ambiguous situations, developing strong problem-solving skills.}
+        \resumeItem{Collaboration and Communication}
+          {Worked closely with a diverse team and communicated effectively with a wide range of stakeholders, including students, staff, and visitors. These experiences have strengthened interpersonal and collaboration skills, which are vital in software development projects.}
       \resumeItemListEnd
-    \resumeSubheading
-      {Computer Science II: Data Structures/Abstraction}{CS23001}
-      {Advanced computer programming design and development}{}
+      \resumeSubheading
+      {Giant Eagle, Inc.}{Green, OH}
+      {Curbside Pickup Associate}{May 2021 - January 2022}
       \resumeItemListStart
-        \resumeItem{Primary focus on data structures and abstraction}
-        \resumeItem{Utilized an object-oriented programming language}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Software Engineering}{CS33901}
-      {An introduction to software engineering concepts}{}
-      \resumeItemListStart
-        \resumeItem{life cycle models; modeling languages; requirements analysis; specification;}
-        \resumeItem{design; testing; validation; project management and maintenance.}
+        \resumeItem{Digital Tools Usage}
+          {Leveraged digital inventory management tools to locate, organize, and fulfill customer orders, honing skills in technology utilization and software navigation.}
+        \resumeItem{Problem Solving}
+          {Addressed and resolved logistical and technical issues in real-time, showcasing adaptability and problem-solving skills critical in software development and debugging.}
+        \resumeItem{Collaboration and Communication}
+          {Worked closely with a team to meet demanding order targets and liaised with customers for order confirmation and adjustments, strengthening interpersonal and collaborative skills.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Centralized Crypto} $|$ \emph{Next, React, Tailwind, Hot Toast}}{January 2023 -- Present}
-          \resumeItemListStart
-            \resumeItem{Centralized Crypto is an application that allows users to deposit money into crypto currency accounts.}
-            \resumeItem{Users are able to make deposits/withdraws from external bank accounts using the web application.}
-            \resumeItem{Users are able to sign up with the “bank” to begin making transactions.}
-            \resumeItem{Application utilizes json for the back-end}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Sneaker Sphere} $|$ \emph{SQL, React, Tailwind}}{January 2023 -- Present}
-          \resumeItemListStart
-            \resumeItem{The purpose of the Sneaker Sphere website is to create a marketplace for shoe buyers and sellers.}
-            \resumeItem{By implementing an SQL database, the website is able to manage all necessary information in one place}
-            \resumeItem{Application is an efficient and effective platform for shoe buying and selling.}
-            \resumeItem{SQL database REST API, React front end}
-          \resumeItemListEnd
-        \resumeProjectHeading
-          {\textbf{Gamma Physics} $|$ \emph{JavaScript, HTML, CSS}}{January 2023 -- Present}
-          \resumeItemListStart
-            \resumeItem{This project implements the p5.js library, as well as HTML and CSS}
-            \resumeItem{This game includes different levels, as well as different balls to choose from.}
-            \resumeItem{The balls come in different shapes and follow different physics rules.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \projectSubHeading
+      {\textbf{Centralized Crypto} $|$ \emph{Next, React, Tailwind, Hot Toast}}{January 2023 -- May 2023}
+      \resumeItemListStart
+        \projectItem
+          {Centralized Crypto is an application that allows users to deposit money into crypto currency accounts.}
+        \projectItem
+          {Users are able to make deposits/withdraws from external bank accounts using the web application.}
+        \projectItem
+          {Users are able to sign up with the “bank” to begin making transactions.}
+        \projectItem
+          {Application utilizes json for the back-end}
+      \resumeItemListEnd
+    \projectSubHeading
+      {\textbf{Sneaker Sphere} $|$ \emph{SQL, React, Tailwind}}{January 2023 -- May 2023}
+      \resumeItemListStart
+        \projectItem
+          {The purpose of the Sneaker Sphere website is to create a marketplace for shoe buyers and sellers.}
+        \projectItem
+          {By implementing an SQL database, the website is able to manage all necessary information in one place}
+        \projectItem
+          {Application is an efficient and effective platform for shoe buying and selling.}
+        \projectItem
+          {SQL database REST API, React front end}
+      \resumeItemListEnd
+    \projectSubHeading
+      {\textbf{Gamma Physics} $|$ \emph{JavaScript, HTML, CSS}}{January 2023 -- Ongoing}
+      \resumeItemListStart
+        \projectItem
+          {This project implements the p5.js library, as well as HTML and CSS.}
+        \projectItem
+          {This game includes different levels, as well as different balls to choose from.}
+        \projectItem
+          {The balls come in different shapes and follow different physics rules.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 
-%
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, C/C++, SQL, JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Next.js} \\
-     \textbf{Developer Tools}{: Git, VS Code, Visual Studio, Eclipse} \\
-     \textbf{Libraries}{: p5.js }
-    }}
- \end{itemize}
+\begin{itemize}[leftmargin=*]
+    \item \small{\textbf{Languages}{: Python, C/C++, SQL, JavaScript, HTML/CSS, R}}
+    \item \small{\textbf{Frameworks}{: React, Node.js, Next.js}}
+    \item \small{\textbf{Developer Tools}{: Git, VS Code, Visual Studio, Eclipse}}
+    \item \small{\textbf{Libraries}{: p5.js}}
+\end{itemize}
 
- %-----------SUMMARY-----------
-\section{Summary}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     I'm a computer science student at Kent State University, currently enrolled in the honors college program. My academic interests lie in programming languages such as Python, JavaScript, and C++, and I enjoy using them to solve real-world problems. I'm passionate about software development and continuously strive to enhance my skills through hands-on experience and challenging coursework. I'm committed to developing innovative solutions that contribute to the betterment of society, and I'm excited about the opportunities that lie ahead as I continue to pursue my academic and professional goals.
-    }}
- \end{itemize}
 
 
 %-------------------------------------------
