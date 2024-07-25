@@ -29,8 +29,8 @@
 % \usepackage[default]{sourcesanspro}
 
 % serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -53,9 +53,13 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
+% \titleformat{\section}{
+%   \vspace{-4pt}\bfseries\scshape\raggedright\large
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{0pt}\bfseries\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -68,10 +72,16 @@
   }
 }
 
+\newcommand{\resumeItemPlain}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & \textbf{#2} \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -106,7 +116,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label=\textbullet]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,label=\textcolor{black}{$\circ$}]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,label=\textbullet]}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
 
@@ -117,46 +127,54 @@
 \begin{document}
 
 %----------HEADING----------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://nathan-fleet.com/}{\Large Nathan Fleet}} & Email : \href{mailto:nfleet@kent.edu}{nfleet@kent.edu}\\
-  \href{https://nathan-fleet.com/}{https://www.nathan-fleet.com} & Mobile : \href{tel:+13305416881}{+1-330-541-6881} \\
-\end{tabular*}
+\begin{center}
+  \textbf{\Huge NATHAN FLEET}
+\end{center}
 
+\begin{center}
+  \href{tel:+13305416881}{+13305416881} \, $\vert$ \,
+  \href{mailto:nfleet@kent.edu}{nfleet@kent.edu} \, $\vert$ \,
+  \href{https://github.com/yourusername}{https://github.com/nathanfleet} \, $\vert$ \,
+  \href{https://linkedin.com/in/yourusername}{https://www.linkedin.com/in/nathan-fleet-555897217/} \, $\vert$ \,
+  \href{https://nathan-fleet.com/}{https://www.nathan-fleet.com}
+\end{center}
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Kent State University, Honors College}{Kent, OH}
-      {Bachelor of Science in Computer Science; Minor in Mathematics; GPA: 3.732}{Aug. 2021 -- May 2025}
-    \resumeSubheading
-      {COF-CS Scholarship Recipient}{}
-      {Choose Ohio First (Computer Science) scholar during Fall 2021 semester.}{}
-  \resumeSubHeadingListEnd
-
+%-----------SUMMARY------------
+\section{PROFESSIONAL SUMMARY}
+  \small{A dynamic professional with a passion for mathematics and problem-solving, eager to leverage skills gained through study and experience. Committed to driving innovation and delivering effective solutions in the tech industry.}
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
+\section{PROFESSIONAL EXPERIENCE}
+  \begin{itemize}[leftmargin=0pt,label={}]
     \resumeSubheading
-      {Cinemark Movie Bistro}{North Canton, OH}
-      {Line Cook}{June 2023 - Ongoing}
+      {Kent State University}{Kent, OH}
+      {App Developer}{April 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Customer Service}
-          { Interacted with customers when delivering food to their seats. }
-        \resumeItem{Communication and Collaboration}
-          { Worked together with coworkers to complete orders quickly and efficiently. }
+        \resumeItemPlain{}
+          { Developed a location-based app using Flutter, similar to Life360, which displays users' live locations on a clock interface. }
+        \resumeItemPlain{}
+          { Implemented backend services with Supabase to manage user data and ensure real-time updates. }
+        \resumeItemPlain{}
+          { Collaborated using GitHub, managing code repositories and version control for seamless teamwork. }
       \resumeItemListEnd
-  \resumeSubHeadingListEnd
+  \end{itemize}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \begin{itemize}[leftmargin=0pt,label={}]
+    \resumeSubheading
+      {Kent State University, Honors College}{December 2024}
+      {Bachelor's, Computer Science, Mathematics}{GPA: 3.732}
+  \end{itemize}
   
 %-----------PROJECTS-----------
-\section{Projects}
-  \resumeSubHeadingListStart
+\section{PROJECTS \& OUTSIDE EXPERIENCE}
+  \begin{itemize}[leftmargin=0pt,label={}]
     \projectSubHeading
       {\textbf{Centralized Crypto} $|$ \emph{Next, React, Tailwind, Hot Toast}}{January 2023 -- May 2023}
       \resumeItemListStart
         \projectItem
-          {Centralized Crypto is an application that allows users to deposit money into crypto currency accounts.}
+          {Centralized Crypto is an application that simulates a crypto currency banking application.}
         \projectItem
           {Users are able to make deposits/withdraws from external bank accounts using the web application.}
         \projectItem
@@ -186,19 +204,21 @@
         \projectItem
           {The balls come in different shapes and follow different physics rules.}
       \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
+    \projectSubHeading
+      {\textbf{Choose Ohio First -- CS Scholarship}}{August 2021 -- December 2021}
+      \resumeItemListStart
+        \projectItem
+          {Worked closely with professors and classmates to develop an IOS application.}
+        \projectItem
+          {Attended weekly scholarship meetings to listen to guest speakers and prepare for conference.}
+        \projectItem
+          {Participated in Microsoft Teams meetings to communicate progress and next steps.}
+      \resumeItemListEnd
+  \end{itemize}
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=*]
-    \item \small{\textbf{Languages}{: C/C++, SQL, JavaScript, HTML/CSS}}
-    \item \small{\textbf{Frameworks}{: React, Node.js, Next.js}}
-    \item \small{\textbf{Developer Tools}{: Git, VS Code, Visual Studio}}
-    \item \small{\textbf{Libraries}{: p5.js}}
-\end{itemize}
-
-
+\section{SKILLS}
+    \small{\textbf{Skills}{: C/C++, SQL, JavaScript, HTML/CSS, R, Python, React, Node.js, Next.js, Flutter, Git, VS Code, Visual Studio, p5.js}}
 
 %-------------------------------------------
 \end{document}
